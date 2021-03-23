@@ -12,7 +12,7 @@ Then use this simple code snippet as a guide
 include_once 'config.php';
 include_once 'Database.php';
 
-$db = new Database();
+$db = new Database($config);
 
 $db->query("SELECT * FROM users WHERE username = :username");
 
